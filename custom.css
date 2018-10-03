@@ -1,0 +1,125 @@
+body {
+  max-width: 1400px； line-height:24px;
+  margin: 100px auto;
+  font-size: 16px;
+  font-family: 'Noto Serif JP', sans-serif;
+  font-weight: 400;
+  background: url(images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+
+h1 {
+  color: rgb(40, 13, 163);
+  /* red green blue color.adobe.com */
+  margin: 18px 0 8px 0;
+  padding: 0 0 16px 0;
+  font-size: 42px;
+  font-weight: bold;
+  letter-spacing: -1px;
+  border-bottom: 2px solid rgb(40, 13, 163);
+}
+h2,h3 {
+  color: rgb(40, 13, 163);
+  /* red green blue color.adobe.com */
+
+}
+
+h4 {
+  color: rgb(130, 80, 189);
+  /* red green blue color.adobe.com */
+}
+ul {
+  margin: 0 0 32px 17px;
+}
+
+li {
+  color: rgb(17 5 36);
+
+}
+a {
+  color: rgb(40, 13, 163);
+
+  text decoration: none;
+}
+
+a:hover {
+  bprder-bottom-style: solid;
+  color: red;
+  background-image: url(images/20.gif);
+}
+
+
+.name img{
+  display: none;
+  position: absolute;
+}
+.name:hover img{
+  display:block;
+
+}
+
+.sticker{
+
+ width: 120px;
+ height: 120px;
+ position: fixed;
+ right:0;
+ top:50%;
+ background-image: url(images/15.gif);
+ opacity:0.5;
+
+}
+
+#li{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  float:right;
+}
+
+
+.container{
+  padding:80px auto;
+  width: 1400px;
+}
+
+.s{
+  border:10px solid transparent;
+  margin-bottom: 25px;
+  height: 80%;
+  opacity:0.7;
+}
+
+.person{
+  transition: 3s;
+  width: 200px;
+}
+.person:hover{
+  transition: all 3s;
+  transition-timing-function: linear;
+  transform: rotate(360deg);
+}
+
+.carousel-inner{
+  margin: 30px auto;
+}
+
+.spin {
+  margin-right: 20px;
+  animation-name: spin;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
